@@ -1,0 +1,20 @@
+---
+title: "hw1"
+author: "psm"
+date: "2016년 9월 8일"
+output: html_document
+---
+
+This is homework number 1
+an example of r markdown doing simple linear regression with airquality data
+
+```{r}
+head(airquality)
+lmfit=lm(Ozone~Wind,data=airquality)
+summary(lmfit)
+plot(airquality$Wind,airquality$Ozone)
+abline(lmfit)
+plot(lmfit)
+
+```
+
